@@ -1,1 +1,86 @@
-h1 {color:Red}
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.calculator {
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    height: 65px;
+    width: 93%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 60px);
+    gap: 10px;
+}
+
+button {
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #e7e7e7;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
+
+.span-2-rows {
+    grid-row: span 2;
+}
+
+.history {
+    height: 65px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.author {
+    text-align: center;
+    margin-top: 15px;
+    color: #888;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.btn-clear {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.btn-clear:hover {
+    background-color: #e60000;
+}
+.equal {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.equal:hover {
+    background-color: #3e8e41;
+}
